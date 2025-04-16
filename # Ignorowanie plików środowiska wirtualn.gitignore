@@ -1,0 +1,4 @@
+# Ignorowanie plików środowiska wirtualnego
+venv/
+__pycache__/
+*.pyc
