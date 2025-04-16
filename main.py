@@ -20,3 +20,7 @@ async def separate(file: UploadFile = File(...)):
     separate_vocals(input_path, output_path)
 
     return FileResponse(output_path, media_type="audio/wav", filename="vocals.wav")
+import uvicorn
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)  # <- FastAPI
