@@ -4,3 +4,4 @@ onnxruntime
 librosa
 numpy
 soundfile
+python-multipart
